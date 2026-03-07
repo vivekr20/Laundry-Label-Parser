@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001000000000000001A /* LaundryLabelParserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000001A /* LaundryLabelParserApp.swift */; };
+		A1000002000000000000001A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002000000000000001A /* ContentView.swift */; };
+		A1000003000000000000001A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003000000000000001A /* CameraView.swift */; };
+		A1000004000000000000001A /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004000000000000001A /* ImagePickerView.swift */; };
+		A1000005000000000000001A /* ScanResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005000000000000001A /* ScanResultView.swift */; };
+		A1000006000000000000001A /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006000000000000001A /* ScanViewModel.swift */; };
+		A1000007000000000000001A /* LabelAnalyzerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007000000000000001A /* LabelAnalyzerService.swift */; };
+		A1000008000000000000001A /* CareInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008000000000000001A /* CareInstruction.swift */; };
+		A1000009000000000000001A /* LaundryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000009000000000000001A /* LaundryLabel.swift */; };
+		A100000A000000000000001A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A200000A000000000000001A /* Assets.xcassets */; };
+		A100000B000000000000001A /* LabelParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B000000000000001A /* LabelParserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9000001000000000000001A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8000001000000000000001A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4000001000000000000001A /* LaundryLabelParser */;
+			remoteInfo = LaundryLabelParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A200000C000000000000001A /* LaundryLabelParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundryLabelParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A200000D000000000000001A /* LaundryLabelParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundryLabelParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000001000000000000001A /* LaundryLabelParserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryLabelParserApp.swift; sourceTree = "<group>"; };
+		A2000002000000000000001A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2000003000000000000001A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A2000004000000000000001A /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		A2000005000000000000001A /* ScanResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultView.swift; sourceTree = "<group>"; };
+		A2000006000000000000001A /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		A2000007000000000000001A /* LabelAnalyzerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAnalyzerService.swift; sourceTree = "<group>"; };
+		A2000008000000000000001A /* CareInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareInstruction.swift; sourceTree = "<group>"; };
+		A2000009000000000000001A /* LaundryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryLabel.swift; sourceTree = "<group>"; };
+		A200000A000000000000001A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A200000E000000000000001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A200000B000000000000001A /* LabelParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelParserTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5000001000000000000001A /* Frameworks (app) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5000002000000000000001A /* Frameworks (tests) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3000001000000000000001A /* root */ = {
+			isa = PBXGroup;
+			children = (
+				A3000002000000000000001A /* LaundryLabelParser */,
+				A3000008000000000000001A /* LaundryLabelParserTests */,
+				A3000009000000000000001A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3000002000000000000001A /* LaundryLabelParser */ = {
+			isa = PBXGroup;
+			children = (
+				A3000003000000000000001A /* App */,
+				A3000004000000000000001A /* Views */,
+				A3000005000000000000001A /* ViewModels */,
+				A3000006000000000000001A /* Services */,
+				A3000007000000000000001A /* Models */,
+				A200000A000000000000001A /* Assets.xcassets */,
+				A200000E000000000000001A /* Info.plist */,
+			);
+			path = LaundryLabelParser;
+			sourceTree = "<group>";
+		};
+		A3000003000000000000001A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000001A /* LaundryLabelParserApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3000004000000000000001A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2000002000000000000001A /* ContentView.swift */,
+				A2000003000000000000001A /* CameraView.swift */,
+				A2000004000000000000001A /* ImagePickerView.swift */,
+				A2000005000000000000001A /* ScanResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3000005000000000000001A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2000006000000000000001A /* ScanViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A3000006000000000000001A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A2000007000000000000001A /* LabelAnalyzerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3000007000000000000001A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2000008000000000000001A /* CareInstruction.swift */,
+				A2000009000000000000001A /* LaundryLabel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3000008000000000000001A /* LaundryLabelParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				A200000B000000000000001A /* LabelParserTests.swift */,
+			);
+			path = LaundryLabelParserTests;
+			sourceTree = "<group>";
+		};
+		A3000009000000000000001A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A200000C000000000000001A /* LaundryLabelParser.app */,
+				A200000D000000000000001A /* LaundryLabelParserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4000001000000000000001A /* LaundryLabelParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7000002000000000000001A /* Build configuration list for PBXNativeTarget "LaundryLabelParser" */;
+			buildPhases = (
+				A5000003000000000000001A /* Sources */,
+				A5000001000000000000001A /* Frameworks */,
+				A5000004000000000000001A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaundryLabelParser;
+			productName = LaundryLabelParser;
+			productReference = A200000C000000000000001A /* LaundryLabelParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4000002000000000000001A /* LaundryLabelParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7000003000000000000001A /* Build configuration list for PBXNativeTarget "LaundryLabelParserTests" */;
+			buildPhases = (
+				A5000005000000000000001A /* Sources */,
+				A5000002000000000000001A /* Frameworks */,
+				A5000006000000000000001A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4000003000000000000001A /* PBXTargetDependency */,
+			);
+			name = LaundryLabelParserTests;
+			productName = LaundryLabelParserTests;
+			productReference = A200000D000000000000001A /* LaundryLabelParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8000001000000000000001A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A4000001000000000000001A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A4000002000000000000001A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A4000001000000000000001A;
+					};
+				};
+			};
+			buildConfigurationList = A7000001000000000000001A /* Build configuration list for PBXProject "LaundryLabelParser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3000001000000000000001A;
+			productRefGroup = A3000009000000000000001A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4000001000000000000001A /* LaundryLabelParser */,
+				A4000002000000000000001A /* LaundryLabelParserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5000004000000000000001A /* Resources (app) */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000A000000000000001A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5000006000000000000001A /* Resources (tests) */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5000003000000000000001A /* Sources (app) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000001A /* LaundryLabelParserApp.swift in Sources */,
+				A1000002000000000000001A /* ContentView.swift in Sources */,
+				A1000003000000000000001A /* CameraView.swift in Sources */,
+				A1000004000000000000001A /* ImagePickerView.swift in Sources */,
+				A1000005000000000000001A /* ScanResultView.swift in Sources */,
+				A1000006000000000000001A /* ScanViewModel.swift in Sources */,
+				A1000007000000000000001A /* LabelAnalyzerService.swift in Sources */,
+				A1000008000000000000001A /* CareInstruction.swift in Sources */,
+				A1000009000000000000001A /* LaundryLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5000005000000000000001A /* Sources (tests) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000B000000000000001A /* LabelParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4000003000000000000001A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4000001000000000000001A /* LaundryLabelParser */;
+			targetProxy = A9000001000000000000001A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A6000001000000000000001A /* Debug (project) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6000002000000000000001A /* Release (project) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6000003000000000000001A /* Debug (app) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LaundryLabelParser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LaundryLabelParser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A6000004000000000000001A /* Release (app) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LaundryLabelParser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LaundryLabelParser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A6000005000000000000001A /* Debug (tests) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LaundryLabelParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundryLabelParser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LaundryLabelParser";
+			};
+			name = Debug;
+		};
+		A6000006000000000000001A /* Release (tests) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LaundryLabelParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundryLabelParser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LaundryLabelParser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7000001000000000000001A /* Build configuration list for PBXProject "LaundryLabelParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6000001000000000000001A /* Debug */,
+				A6000002000000000000001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7000002000000000000001A /* Build configuration list for PBXNativeTarget "LaundryLabelParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6000003000000000000001A /* Debug */,
+				A6000004000000000000001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7000003000000000000001A /* Build configuration list for PBXNativeTarget "LaundryLabelParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6000005000000000000001A /* Debug */,
+				A6000006000000000000001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A8000001000000000000001A /* Project object */;
+}
