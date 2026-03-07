@@ -1,0 +1,42 @@
+name: LaundryLabelParser
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+
+targets:
+  LaundryLabelParser:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - LaundryLabelParser
+    info:
+      path: LaundryLabelParser/Info.plist
+    settings:
+      base:
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.LaundryLabelParser
+
+  LaundryLabelParserTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - LaundryLabelParserTests
+    dependencies:
+      - target: LaundryLabelParser
+    settings:
+      base:
+        SWIFT_VERSION: "5.9"
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.LaundryLabelParserTests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LaundryLabelParser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LaundryLabelParser"
+        BUNDLE_LOADER: "$(TEST_HOST)"
