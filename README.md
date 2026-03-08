@@ -94,4 +94,4 @@ All image processing is performed **on-device** using Apple's Vision framework. 
 
 ## License
 
-[MIT](LICENSE)
+[GNU General Public License v3.0](LICENSE)
